@@ -1,0 +1,11 @@
+local:
+  port: 8080
+db:
+  host: "postgres"
+  port: "5432"
+  username: "postgres"
+  password: "postgres"
+  dbname: "postgres"
+  sslmode: "disable"
+  driver: "postgres"
+  timeout: 60s

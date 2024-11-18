@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package usdt;
+
+option go_package = "usdt/proto;proto";
+
+// Описание GRPC сервиса
+service RatesService {
+  // Метод для получения последнего сохраненного курса USDT из хранилища
+  rpc GetRates (GetRatesRequest) returns (GetRatesResponse);
+}
+
+// Запрос для метода GetRates
+message GetRatesRequest {
+  // Дополнительные параметры можно добавить позже
+}
+
+// Ответ для метода GetRates
+message GetRatesResponse {
+  double ask = 1;            // Первая цена ask
+  double bid = 2;            // Первая цена bid
+  int64 timestamp = 3;       // Временная метка в UNIX формате
+}
