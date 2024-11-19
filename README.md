@@ -38,7 +38,7 @@
 
 1. **Склонируйте репозиторий:**
    ```bash
-   git clone <URL_репозитория>
+   git clone https://github.com/Tiltuky/getUSDT.git
 2. **Соберите Docker-образ:**
    ```bash
    make docker-build
